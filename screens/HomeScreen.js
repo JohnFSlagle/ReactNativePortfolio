@@ -3,7 +3,7 @@ import { ScrollView, Text, View } from "react-native";
 import { Card } from "react-native-elements";
 import { CAMPSITES } from "../shared/campsites";
 import { PROMOTIONS } from "../shared/promotions";
-import { PARTNERS } from "../shared/partners";
+import { PROJECTS } from "../shared/projects";
 
 const FeaturedItem = ({ item }) => {
   if (item) {
@@ -32,17 +32,17 @@ const FeaturedItem = ({ item }) => {
 const HomeScreen = () => {
   const [campsites, setCampsites] = useState(CAMPSITES);
   const [promotions, setPromotions] = useState(PROMOTIONS);
-  const [partners, setPartners] = useState(PARTNERS);
+  const [projects, setProjects] = useState(PROJECTS);
 
   const featCampsite = campsites.find((item) => item.featured);
   const featPromotion = promotions.find((item) => item.featured);
-  const featPartner = partners.find((item) => item.featured);
+  const featProject = projects.find((item) => item.featured);
 
   return (
     <ScrollView>
       <FeaturedItem item={featCampsite} />
       <FeaturedItem item={featPromotion} />
-      <FeaturedItem item={featPartner} />
+      <FeaturedItem item={featProject} />
     </ScrollView>
   );
 };
