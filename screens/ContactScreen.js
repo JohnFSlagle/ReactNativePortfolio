@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ScrollView } from "react-native-gesture-handler";
 import { Card } from "react-native-elements";
 import {
@@ -35,6 +36,10 @@ const EmailLink = () => {
     </View>
   );
 };
+=======
+import { ScrollView, Text } from "react-native";
+import { Card } from "react-native-elements";
+>>>>>>> b17f6305a921880a8afd7710bf7469a5a5340867
 
 const ContactScreen = () => {
   return (
@@ -42,13 +47,22 @@ const ContactScreen = () => {
       <Card wrapperStyle={{ margin: 20 }}>
         <Card.Title>Contact Information</Card.Title>
         <Card.Divider />
+<<<<<<< HEAD
         <PhoneNumberComponent />
         <EmailLink />
+=======
+        <Text>1 Nucamp Way</Text>
+        <Text>Seattle, WA 98001</Text>
+        <Text style={{ marginBottom: 10 }}>U.S.A.</Text>
+        <Text>Phone: 1-206-555-1234</Text>
+        <Text>Email: campsites@nucamp.co</Text>
+>>>>>>> b17f6305a921880a8afd7710bf7469a5a5340867
       </Card>
     </ScrollView>
   );
 };
 
+<<<<<<< HEAD
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -68,4 +82,6 @@ const styles = StyleSheet.create({
   },
 });
 
+=======
+>>>>>>> b17f6305a921880a8afd7710bf7469a5a5340867
 export default ContactScreen;
